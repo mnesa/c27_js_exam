@@ -1,0 +1,57 @@
+body{
+  color: #000;
+}
+
+/* .color-a{
+  background-color: #1a5276;
+  color: #ffffff;
+} */
+.color-f{
+  background-color: #178d75;
+  color: #eeeeee;
+}
+.color-bg{
+  background-color: #04aa6d;
+}
+.color-text{
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo{
+  width: 100px;
+}
+
+.btn-success{
+  background-color: #04aa6d;
+}
+
+.product .btn{
+  margin-top: 9rem;
+  margin-left: 7rem;
+  font-size: 1.2rem;
+}
+.product a{
+  text-decoration: none;
+}
+
+.login-page .boxes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+.login-page .boxes img{
+  width: 80%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+@media (max-width:668px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>happy shopping</title>
+</head>
+<body>
+  <header>
+   
+      <nav class="navbar navbar-expand-lg color-bg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logoo.jpg" alt="" class="logo">
+          </a>
+          <button class="navbar-toggler color-text" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon color-text"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active color-text" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link color-text" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text" href="cart.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text" href="login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success color-text" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+<!-- cart -->
+<section class="cart">
+  <div class="container my-4">
+    <h2 class="my-4">My Shopping Cart</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- watch -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow p-3 mb-5 rounded">
+          <img src="img/watch.jpg" class="card-img-top" alt="pic">
+          <div class="card-body  text-center">
+            <h5 class="card-title">Silver Watch</h5>
+            <p class="input-group number-spinner">
+              <button id="watch-minus" class="btn btn-default">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input id="watch-number" type="number" min="0" class="form-control text-center fw-bold" value="1">
+              <button id="watch-plus" class="btn btn-default">
+                <i class="fas fa-plus"></i>
+              </button>
+              <h5>$<span id="watch-total">120</span></h5>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- dress -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow p-3 mb-5 rounded">
+          <img src="img/dress-w.jpg" class="card-img-top" alt="pic">
+          <div class="card-body  text-center">
+            <h5 class="card-title">Black Dress</h5>
+            <p class="input-group number-spinner">
+              <button id="dress-minus" class="btn btn-default">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input id="dress-number" type="number" min="0" class="form-control text-center fw-bold" value="1">
+              <button id="dress-plus" class="btn btn-default">
+                <i class="fas fa-plus"></i>
+              </button>
+              <h5>$<span id="dress-total">80</span></h5>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- cup -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow p-3 mb-5 rounded">
+          <img src="img/cup.jpg" class="card-img-top" alt="pic">
+          <div class="card-body  text-center">
+            <h5 class="card-title">Black Logo Cup</h5>
+            <p class="input-group number-spinner">
+              <button id="cup-minus" class="btn btn-default">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input id="cup-number" type="number" min="0" class="form-control text-center fw-bold" value="1">
+              <button id="cup-plus" class="btn btn-default">
+                <i class="fas fa-plus"></i>
+              </button>
+              <h5>$<span id="cup-total">40</span></h5>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- cap -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow p-3 mb-5 rounded">
+          <img src="img/cap.jpg" class="card-img-top" alt="pic">
+          <div class="card-body  text-center">
+            <h5 class="card-title">LA cap</h5>
+            <p class="input-group number-spinner">
+              <button id="cap-minus" class="btn btn-default">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input id="cap-number" type="number" min="0" class="form-control text-center fw-bold" value="1">
+              <button id="cap-plus" class="btn btn-default">
+                <i class="fas fa-plus"></i>
+              </button>
+              <h5>$<span id="cap-total">30</span></h5>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- bag -->
+      <div class="col mx-auto">
+        <div class="card h-100 border-0 shadow p-3 mb-5 rounded">
+          <img src="img/bag.jpg" class="card-img-top" alt="pic">
+          <div class="card-body  text-center">
+            <h5 class="card-title">Travel Bag</h5>
+            <p class="input-group number-spinner">
+              <button id="bag-minus" class="btn btn-default">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input id="bag-number" type="number" min="0" class="form-control text-center fw-bold" value="1">
+              <button id="bag-plus" class="btn btn-default">
+                <i class="fas fa-plus"></i>
+              </button>
+              <h5>$<span id="bag-total">50</span></h5>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Total Amount -->
+<section class="container m-5 mx-auto border shadow p-3 mb-5 rounded">
+  <div class="p-5 fs-4">
+    <table style="width: 100%;">
+      <tr>
+        <td>Subtotal:</td>
+        <td>$<span id="sub-total">320</span></td>
+      </tr>
+      <tr>
+        <td>Tax: (15%)</td>
+        <td>$<span id="tax">48</span></td>
+      </tr>
+      <tr>
+        <td>Grand Total:</td>
+        <td>$<span id="grand-total">368</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <button type="button" class="btn btn-success mt-4">
+      <a href="thank.html" class="text-white" style="text-decoration: none;">Check Out</a></button>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="container-fluid color-bg p-5">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card color-bg border-0">
+        <div class="card-body">
+          <h5 class="card-title">About</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, beatae debitis quam est sit nam omnis veniam facilis ratione reiciendis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card color-bg border-0">
+        <div class="card-body">
+          <h5 class="card-title">Countact Us</h5>
+          <p class="card-text">
+            <i class="fab fa-twitter pe-3"></i>
+            <i class="fab fa-linkedin-in pe-3"></i>
+            <i class="fab fa-facebook-f pe-3"></i>
+            <i class="fab fa-facebook-messenger pe-3"></i>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <footer class="footer-end container-fluid p-3 text-center color-f">
+    <p>
+      Copyright &copy; 2019, All Rights Reserved
+    </p>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

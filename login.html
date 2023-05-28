@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -50,12 +50,14 @@
       </div>
     </nav>
 </header>
-  <section class="container grid">
-    <div>
+  <section class="container">
+<div class="row">
+    <div class="col-md-6">
       <img src="img/login.jpg" alt="" class="img-fluid m-5">
     </div>
+    <div class="col-md-6">
     <div class="ms-5 mt-5 shadow p-3 mb-5 rounded">
-      <form class="m-3">
+      <form>
         <h2>Please Login</h2>
         <div class="mb-3">
           <label class="form-label">Email address</label>
@@ -74,6 +76,8 @@
       </form>
       <button type="submit" class="btn btn-success ms-3 px-3 border-0" id="login-button">Submit</button>
     </div>
+    </div>
+  </div>
   </section>
 
 <!-- footer -->

@@ -36,22 +36,3 @@ body{
   text-decoration: none;
 }
 
-.login-page .boxes{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin: 20px;
-}
-.login-page .boxes img{
-  width: 80%;
-}
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-@media (max-width:668px) {
-  .grid{
-    grid-template-columns: 1fr;
-  }
-}
